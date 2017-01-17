@@ -1,0 +1,140 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+
+body {
+  background-color: #394a58;
+}
+
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  padding: 15px 10px 10px 10px;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  text-indent: 30px;
+  padding: 10px 0px;
+}
+
+
+.trip-img {
+  background-image: linear-gradient(rgba(47, 149, 179, 0.3), rgba(47, 149, 179, 0.3)), url("images/GREECE.jpg");
+}
+
+/* line 41, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.sass */
+
+.trip-title {
+  background-color: #ADADAD;
+}
+
+/* line 44, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.sass */
+
+.trip-dis {
+  padding: 10px;
+  text-align: justify;
+}
+
+/* Trip Information */
+// Open State
+
+
+.box-wrapper {
+  width: 50%;
+  float: left;
+  transition: all .5s ease-in-out 0s;
+  &:hover {
+    width: 100%;
+    h2 {
+      padding: 5px 0px 5px 15px;
+      text-align: left;
+        margin: 0;
+    }
+    .card {
+      height: auto;
+    }
+    .card-back {
+      left: 0px;
+      max-height: 600px;
+    }
+  }
+}
+
+
+
+/* Original States */
+
+.card {
+  background-color: #2f95b3;
+  border: 1px solid red;
+  overflow: hidden;
+  transition: all .5s ease-in-out 0s;
+  position: relative;
+  height: 100px;
+  h2 {
+    text-align: center;
+    margin: 40px 0px 0px 0px;  
+    font-size: 6vw;
+    border: 1px solid black;
+    transition: all .5s ease-in-out  0s;
+  }
+}
+
+.card-back {
+  position: relative;
+  max-height: 0px;
+  left: -1500px;
+  padding: 10px;
+  border: 1px dashed yellow;
+  transition: all .8s ease-in-out;
+}
+
+/*--Clearfix used for clearing the floats */
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+.flexbox {
+    display: flex;
+    flex-grow: 1;
+}
+
+.item {
+    background-color: lightcoral;
+    height: 20px;
+}
