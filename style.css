@@ -1,21 +1,17 @@
 /* CSS Document */
-/* line 3, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 * {
   margin: 0;
   padding: 0;
   font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif; }
 
-/* line 9, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 body {
   background-color: #394a58; }
 
-/* line 14, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 img {
   width: 100%;
   max-width: 100%;
   vertical-align: middle; }
 
-/* line 21, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 h1 {
   text-transform: uppercase;
   padding: 15px 10px 10px 10px;
@@ -24,11 +20,9 @@ h1 {
   font-weight: 300;
   font-size: 30px; }
 
-/* line 30, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 h2 {
   color: white; }
 
-/* line 34, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 p {
   font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
   color: white;
@@ -37,45 +31,34 @@ p {
   text-indent: 30px;
   padding: 10px 0px; }
 
-/* line 44, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
+/* Top Section */
 .trip-img {
   background-image: linear-gradient(rgba(47, 149, 179, 0.3), rgba(47, 149, 179, 0.3)), url("images/GREECE.jpg"); }
 
-/* line 41, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.sass */
-/* line 50, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 .trip-title {
   background-color: #ADADAD; }
 
-/* line 44, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.sass */
-/* line 56, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 .trip-dis {
   padding: 10px;
   text-align: justify; }
 
-/* Trip Information */
-/* line 65, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
+/* Card Section */
 .box-wrapper {
   width: 50%;
   float: left;
   transition: all .5s ease-in-out 0s; }
-  /* line 69, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
   .box-wrapper:hover {
     width: 100%; }
-    /* line 71, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
     .box-wrapper:hover h2 {
       padding: 5px 0px 5px 15px;
       text-align: left;
       margin: 0; }
-    /* line 76, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
     .box-wrapper:hover .card {
       height: auto; }
-    /* line 79, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
     .box-wrapper:hover .card-back {
       left: 0px;
       max-height: 600px; }
 
-/* Original States */
-/* line 90, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 .card {
   background-color: #2f95b3;
   border: 1px solid red;
@@ -83,7 +66,6 @@ p {
   transition: all .5s ease-in-out 0s;
   position: relative;
   height: 100px; }
-  /* line 97, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
   .card h2 {
     text-align: center;
     margin: 40px 0px 0px 0px;
@@ -91,7 +73,6 @@ p {
     border: 1px solid black;
     transition: all .5s ease-in-out  0s; }
 
-/* line 106, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 .card-back {
   position: relative;
   max-height: 0px;
@@ -100,29 +81,12 @@ p {
   border: 1px dashed yellow;
   transition: all .8s ease-in-out; }
 
-/*--Clearfix used for clearing the floats */
-/* line 117, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
 .clearfix {
-  zoom: 1;
-  /* ie 6/7 */ }
-  /* line 120, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
+  zoom: 1; }
   .clearfix:before {
     content: "";
     display: table; }
-  /* line 124, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
   .clearfix:after {
     content: "";
     display: table;
     clear: both; }
-
-/* line 132, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
-.flexbox {
-  display: flex;
-  flex-grow: 1; }
-
-/* line 137, C:/Users/cmcha/Dropbox/Web/.Site Overhaul/.Site Overhaul Testing Ground/style.scss */
-.item {
-  background-color: lightcoral;
-  height: 20px; }
-
-/*# sourceMappingURL=style.css.map */
