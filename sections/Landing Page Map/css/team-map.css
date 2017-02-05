@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: FuturaNo2D-Medium, Futura No2 D; }
+
+/* General Formating */
+h1 {
+  color: black;
+  font-size: 1.5em; }
+
+p {
+  font-size: 1em;
+  font-weight: 400; }
+
+/* Containers */
+.container {
+  background-color: #394B59;
+  width: 100%; }
+
+#map-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: #394B59; }
+
+.svg-wrapper {
+  top: 0px;
+  width: 100%;
+  z-index: 1; }
+
+/* Individual Team Callout Boxes */
+.callout, #callout-costaRica, #callout-china {
+  position: absolute;
+  z-index: 2;
+  width: 470px;
+  height: auto;
+  background-color: white;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  /* Close Button */
+  /* 3 Img Section */
+  /*Content Area of callout box */
+  /* Bottom Buttons */ }
+  .callout .close-x, #callout-costaRica .close-x, #callout-china .close-x {
+    height: 30px;
+    width: 30px;
+    cursor: pointer; }
+  .callout .right, #callout-costaRica .right, #callout-china .right {
+    position: absolute;
+    top: -10px;
+    left: 449px; }
+  .callout .left, #callout-costaRica .left, #callout-china .left {
+    position: absolute;
+    top: -10px;
+    left: -10px; }
+  .callout .img-flexbox, #callout-costaRica .img-flexbox, #callout-china .img-flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100px;
+    width: auto; }
+    .callout .img-flexbox img, #callout-costaRica .img-flexbox img, #callout-china .img-flexbox img {
+      height: 100%;
+      width: 150px; }
+  .callout .content, #callout-costaRica .content, #callout-china .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px; }
+  .callout .callout-btn-flex, #callout-costaRica .callout-btn-flex, #callout-china .callout-btn-flex {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .callout .callout-btn-flex button, #callout-costaRica .callout-btn-flex button, #callout-china .callout-btn-flex button {
+      /*Button Text */
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: white;
+      /*Button Box */
+      width: 230px;
+      border: none;
+      height: 50px; }
+    .callout .callout-btn-flex .btn-reg, #callout-costaRica .callout-btn-flex .btn-reg, #callout-china .callout-btn-flex .btn-reg {
+      background: #DE5234; }
+      .callout .callout-btn-flex .btn-reg:hover, #callout-costaRica .callout-btn-flex .btn-reg:hover, #callout-china .callout-btn-flex .btn-reg:hover {
+        background: #e57760; }
+    .callout .callout-btn-flex .btn-info, #callout-costaRica .callout-btn-flex .btn-info, #callout-china .callout-btn-flex .btn-info {
+      background: #2F95B4; }
+      .callout .callout-btn-flex .btn-info:hover, #callout-costaRica .callout-btn-flex .btn-info:hover, #callout-china .callout-btn-flex .btn-info:hover {
+        background: #47afcf; }
+
+#callout-costaRica {
+  top: 51%;
+  left: 17.5%;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left; }
+
+#callout-china {
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  top: 37.5%;
+  right: 19.4%; }
+
+/*Team Selectors for :hover Animation */
+#Scotland, #Greece, #Nehemiah, #Costa_Rica, #Uganda, #Ireland, #Sierra_Leone, #Nepal, #Western_Europe {
+  cursor: pointer;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear; }
+  #Scotland:hover, #Greece:hover, #Nehemiah:hover, #Costa_Rica:hover, #Uganda:hover, #Ireland:hover, #Sierra_Leone:hover, #Nepal:hover, #Western_Europe:hover {
+    -webkit-transform: scale(1.019);
+    -ms-transform: scale(1.019);
+    transform: scale(1.019); }
+
+#China {
+  cursor: pointer;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear; }
+  #China:hover {
+    -webkit-transform: scale(1.016);
+    -ms-transform: scale(1.016);
+    transform: scale(1.016); }
+
+#Australia {
+  cursor: pointer;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear; }
+  #Australia:hover {
+    -webkit-transform: scale(1.026);
+    -ms-transform: scale(1.026);
+    transform: scale(1.026); }

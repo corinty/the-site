@@ -1,0 +1,36 @@
+*
+  margin: 0
+  padding: 0
+
+.container
+  display: flex
+    align-content: space-between
+  margin: 0 20px 0 20px
+  border: 2px solid purple
+  height: 300px
+  transition: all .5s
+
+.main-content
+  flex-grow: 1
+  background: lightblue
+
+.side-bar
+  background: lightyellow
+  width: 230px
+
+
+@media (max-width: 950px)
+  .container
+    flex-direction: column
+    margin: 0 10px 0 10px
+
+
+  .side-bar
+    width: 100%
+    height: 75px
+
+  @media (max-width: 650px)
+    .container
+      margin: 0
+    .side-bar
+      display: none

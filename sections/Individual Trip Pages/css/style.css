@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 4vw; }
+
+body {
+  font-family: Futura No2 D, FuturaNo2D-DemBol;
+  font-weight: 100;
+  color: white;
+  background-color: #394B59; }
+
+p {
+  font-size: 4.5vw;
+  text-indent: 60px;
+  padding: 10px 0px;
+  font-weight: 450; }
+
+/* Top Section */
+#trip-title {
+  padding: 5px 0px 5px 20px;
+  background: #adadad; }
+  #trip-title h1 {
+    text-transform: uppercase;
+    font-size: 13vw; }
+
+.trip-header {
+  position: relative;
+  height: 130vw;
+  background-image: url(../images/greece-banner.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+  .trip-header .trip-dis {
+    position: absolute;
+    bottom: 6%;
+    background: rgba(57, 75, 89, 0.9);
+    padding: 15px 10px 20px 15px;
+    text-align: justify; }
+
+#info-box-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.map-icon {
+  height: 100%;
+  width: 100%; }
+
+.content {
+  position: relative;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  left: -260%;
+  padding: 20px;
+  text-align: left; }
+
+.info-box, #box1, #box2, #box3, #box4, #box5, #box6 {
+  width: 50%;
+  height: 30vw;
+  text-align: center;
+  -webkit-transition: width .3s ease-out;
+  transition: width .3s ease-out; }
+
+#box1 {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  background: #2F95B4; }
+
+#box2 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  background: #DE5234; }
+
+#box3 {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  background: #2F95B4; }
+
+#box4 {
+  background: #DE5234;
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4; }
+
+#box5 {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  background: #2F95B4; }
+
+#box6 {
+  -webkit-box-ordinal-group: 7;
+  -webkit-order: 6;
+  -ms-flex-order: 6;
+  order: 6;
+  background: #DE5234; }

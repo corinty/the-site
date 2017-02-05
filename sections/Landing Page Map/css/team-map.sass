@@ -1,0 +1,143 @@
+$rs-lightblue: #2F95B4
+$rm-blue: #394B59
+$kd-orange: #DE5234
+$amount: 10%
+*
+  padding: 0
+  margin: 0
+  font-family: FuturaNo2D-Medium, Futura No2 D
+/* General Formating
+h1
+  color: black
+  font-size: 1.5em
+p
+  font-size: 1em
+  font-weight: 400
+
+/* Containers
+.container
+  background-color: $rm-blue
+  width: 100%
+
+#map-container
+  position: relative
+  width: 100%
+  //border: 3px dashed red
+  margin: auto
+  background: $rm-blue
+
+.svg-wrapper
+  top: 0px
+  width: 100%
+  //border: 2px solid green
+  z-index: 1
+
+
+/* Individual Team Callout Boxes
+.callout
+  position: absolute
+  z-index: 2
+  width: 470px
+  height: auto
+  background-color: white
+  transform: scale(0)
+  transition: all .2s ease-in
+  /* Close Button
+  .close-x
+    height: 30px
+    width: 30px
+    cursor: pointer
+  .right
+    position: absolute
+    top: -10px
+    left: 449px
+  .left
+    position: absolute
+    top: -10px
+    left: -10px
+
+
+
+
+
+
+  /* 3 Img Section
+  .img-flexbox
+    display: flex
+    justify-content: space-between
+    //border: 2px dashed yellow
+    height: 100px
+    width: auto
+    img
+      height: 100%
+      width: 150px
+
+  /*Content Area of callout box
+  .content
+    display: flex
+    flex-direction: column
+    margin: 20px 10px 20px 10px
+
+  /* Bottom Buttons
+  .callout-btn-flex
+    padding-top: 10px
+    display: flex
+    justify-content: space-between
+
+    button
+      /*Button Text
+      font-size: 1.2em
+      text-transform: uppercase
+      font-weight: 500
+      color: white
+      /*Button Box
+      width: 230px
+      border: none
+      height: 50px
+      //transition: all .2s linear
+    .btn-reg
+      background: $kd-orange
+      &:hover
+        background: lighten($kd-orange, $amount)
+    .btn-info
+      background: $rs-lightblue
+      &:hover
+        background: lighten($rs-lightblue, $amount)
+
+#callout-costaRica
+  @extend .callout
+  top: 51%
+  left: 17.5%
+  transform-origin: top left
+
+#callout-china
+  @extend .callout
+  transform-origin: top right
+  //transform: scale(1)
+  top: 37.5%
+  right: 19.4%
+
+
+
+
+/*Team Selectors for :hover Animation
+
+#Scotland, #Greece, #Nehemiah, #Costa_Rica, #Uganda, #Ireland, #Sierra_Leone, #Nepal, #Western_Europe
+  cursor: pointer
+  transform-origin: bottom right
+  transition: all .3s linear
+  &:hover
+    transform: scale(1.019)
+
+#China
+  cursor: pointer
+  transform-origin: bottom right
+  transition: all .3s linear
+  &:hover
+    transform: scale(1.016)
+#Australia
+  cursor: pointer
+  transform-origin: bottom right
+  transition: all .3s linear
+  &:hover
+    transform: scale(1.026)

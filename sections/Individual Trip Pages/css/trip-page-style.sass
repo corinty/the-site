@@ -1,0 +1,132 @@
+$rs-lightblue: #2F95B4
+$rm-blue: #394B59
+$kd-orange: #DE5234
+$rm-purple: #5f4d7d
+$amount: 10%
+$b: "1px solid  yellow"
+
+*
+  margin: 0
+  padding: 0
+
+  font-size: 4vw
+
+body
+  font-family: Futura No2 D, FuturaNo2D-DemBol
+  font-weight: 100
+  color: white
+  background-color: $rm-blue
+
+
+p
+  font-size: 4.5vw
+  text-indent: 60px
+  padding: 10px 0px
+  font-weight: 450
+
+/* Top Section
+#trip-title
+  padding: 5px 0px 5px 20px
+  background: #adadad
+  h1
+    text-transform: uppercase
+    font-size: 13vw
+
+.trip-header
+  position: relative
+  height: 130vw
+  background:
+    image: url(../images/greece-banner.jpg)
+    size: auto 100%
+    repeat: no-repeat
+    position: bottom center
+  .trip-dis
+    position: absolute
+    bottom: 6%
+    background: rgba(57, 75, 89, .9)
+    padding: 15px 10px 20px 15px
+    text-align: justify
+
+
+
+#info-box-container
+  display: flex
+  flex-wrap: wrap
+
+.map-icon
+
+.info-title
+  display: flex
+  height: 15vw
+  background: $rm-purple
+  justify-content: space-between
+  img
+    //need to add rotation animation
+    height: 50%
+    width: auto
+    margin-top: auto
+    margin-bottom: auto
+    margin-right: 15px
+
+  h2
+    margin-top: auto
+    margin-bottom: auto
+    padding-left: 10px
+    font-size: 1.8em
+    font-weight: 500
+.info-dis
+  padding: 10px
+
+
+
+.content
+  position: relative
+  //transform: scaleY(0)
+  left: -260%
+  transition: all .3s ease-out
+  padding: 0px
+  text-align: left
+.expanded
+  left: 0%
+  //transform: scaleY(1)
+
+
+.info-box
+  width: 50%
+  height: 30vw
+  text-align: center
+  transition: width .3s ease-out
+  //transition: height 2s
+  //overflow: hidden
+
+
+#box1
+  @extend .info-box
+  order: 1
+  background: $rs-lightblue
+
+#box2
+  @extend .info-box
+  order: 2
+  background: $kd-orange
+
+#box3
+  @extend .info-box
+  order: 3
+  background: $rs-lightblue
+
+#box4
+  @extend .info-box
+  background: $kd-orange
+  order: 4
+
+
+#box5
+  @extend .info-box
+  order: 5
+  background: $rs-lightblue
+
+#box6
+  @extend .info-box
+  order: 6
+  background: $kd-orange
