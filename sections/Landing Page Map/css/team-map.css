@@ -13,20 +13,43 @@ p {
   font-weight: 400; }
 
 /* Containers */
-.container {
-  background-color: #394B59;
-  width: 100%; }
+.register-btn {
+  position: fixed;
+  bottom: 2vmax;
+  right: 3vmax;
+  width: 10vw;
+  height: 7vh;
+  background: #DE5234;
+  z-index: 20;
+  border-radius: 10px;
+  display: block; }
+  .register-btn h4 {
+    position: relative;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 #map-container {
-  position: relative;
+  position: fixed;
+  height: 90vh;
   width: 100%;
-  margin: auto;
   background: #394B59; }
 
 .svg-wrapper {
-  top: 0px;
-  width: 100%;
-  z-index: 1; }
+  position: relative;
+  display: block;
+  width: auto;
+  height: 100%; }
+  .svg-wrapper svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto; }
 
 /* Individual Team Callout Boxes */
 .callout, #callout-costaRica, #callout-china {
@@ -111,8 +134,8 @@ p {
         background: #47afcf; }
 
 #callout-costaRica {
-  top: 51%;
-  left: 17.5%;
+  top: 52%;
+  left: 21.5%;
   -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left; }
@@ -160,3 +183,44 @@ p {
     -webkit-transform: scale(1.026);
     -ms-transform: scale(1.026);
     transform: scale(1.026); }
+
+.main-container {
+  position: relative;
+  height: 2000px;
+  background: #47afcf;
+  top: 85vh; }
+  .main-container .logo {
+    width: 24vh;
+    position: absolute;
+    top: -11vh;
+    left: 2.5vw;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    z-index: 20; }
+  .main-container .logo-fixed {
+    position: fixed;
+    top: 0px;
+    left: 1vw;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  .main-container .discription {
+    padding: 15px 5px 15px 14vw;
+    top: 18vh;
+    position: relative;
+    background: white;
+    float: left;
+    width: 50%;
+    border-radius: 0 19px 19px 0; }
+    .main-container .discription h1 {
+      margin-bottom: 10px; }
+    .main-container .discription p {
+      text-indent: 30px; }
+  .main-container .video-container {
+    position: relative;
+    top: 60vh;
+    right: 90px;
+    padding-right: 14vw;
+    height: 360px;
+    width: 270px;
+    background: yellow; }

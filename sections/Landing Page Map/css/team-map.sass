@@ -1,6 +1,8 @@
 $rs-lightblue: #2F95B4
 $rm-blue: #394B59
 $kd-orange: #DE5234
+$rm-purple: #5f4d7d
+$rm-green: #6A933E
 $amount: 10%
 *
   padding: 0
@@ -15,22 +17,51 @@ p
   font-weight: 400
 
 /* Containers
-.container
-  background-color: $rm-blue
-  width: 100%
+
+.register-btn
+    position: fixed
+    bottom: 2vmax
+    right: 3vmax
+    width: 10vw
+    height: 7vh
+    background: $kd-orange
+    z-index: 20
+    border-radius: 10px
+    display: block
+    h4
+        position: relative
+        font-size: 1.5vw
+        color: white
+        font-weight: bold
+        text-align: center
+        top: 50%
+        transform: translateY(-50%);
+
+
 
 #map-container
-  position: relative
-  width: 100%
-  //border: 3px dashed red
-  margin: auto
-  background: $rm-blue
+    position: fixed
+    height: 90vh
+    width: 100%
+    //border: 3px dashed blue
+
+    background: $rm-blue
+
 
 .svg-wrapper
-  top: 0px
-  width: 100%
-  //border: 2px solid green
-  z-index: 1
+    position: relative
+    display: block
+    //border: 1px solid red
+    width: auto
+    height: 100%
+    svg
+        display: block
+        height: 100%
+        width: 100%
+        margin: 0 auto
+
+
+
 
 
 /* Individual Team Callout Boxes
@@ -55,11 +86,6 @@ p
     position: absolute
     top: -10px
     left: -10px
-
-
-
-
-
 
   /* 3 Img Section
   .img-flexbox
@@ -106,8 +132,8 @@ p
 
 #callout-costaRica
   @extend .callout
-  top: 51%
-  left: 17.5%
+  top: 52%
+  left: 21.5%
   transform-origin: top left
 
 #callout-china
@@ -141,3 +167,48 @@ p
   transition: all .3s linear
   &:hover
     transform: scale(1.026)
+
+
+// Main container
+
+.main-container
+
+    position: relative
+    height: 2000px
+    background: lighten($rs-lightblue, $amount)
+    top: 85vh
+
+    .logo
+        width: 24vh
+        position: absolute
+        top: -11vh
+        left: 2.5vw
+        transition: all .2s linear
+        z-index: 20
+    .logo-fixed
+        position: fixed
+        top: 0px
+        left: 1vw
+        transform: scale(.9)
+
+    .discription
+        padding: 15px 5px 15px 14vw
+        top: 18vh
+        position: relative
+        background: white
+        float: left
+        width: 50%
+        border-radius: 0 19px 19px 0
+        h1
+            margin-bottom: 10px
+        p
+            text-indent: 30px
+
+    .video-container
+        position: relative
+        top: 60vh
+        right: 90px
+        padding-right: 14vw
+        height: 360px
+        width: 270px
+        background: yellow

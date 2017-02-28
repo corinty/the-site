@@ -2,8 +2,8 @@ $rs-lightblue: #2F95B4
 $rm-blue: #394B59
 $kd-orange: #DE5234
 $rm-purple: #5f4d7d
+$rm-green: #6A933E
 $amount: 10%
-$b: "1px solid  yellow"
 
 *
   margin: 0
@@ -15,7 +15,8 @@ body
   font-family: Futura No2 D, FuturaNo2D-DemBol
   font-weight: 100
   color: white
-  background-color: $rm-blue
+  //background-color: $rm-blue
+
 
 
 p
@@ -25,48 +26,127 @@ p
   font-weight: 450
 
 /* Top Section
-#trip-title
-  padding: 5px 0px 5px 20px
-  background: #adadad
-  h1
-    text-transform: uppercase
-    font-size: 13vw
+.trip-image
+    position: fixed
+    height: 100vh
+    width: 100vw
+    transition: all .5s linear
+    background:
+        image: url(../images/greece-banner.jpg)
+        size: auto 100%
+        repeat: no-repeat
+        position: bottom center
+        //attachment: fixed
 
-.trip-header
-  position: relative
-  height: 130vw
-  background:
-    image: url(../images/greece-banner.jpg)
-    size: auto 100%
-    repeat: no-repeat
-    position: bottom center
-  .trip-dis
-    position: absolute
-    bottom: 6%
+#trip-title
+    z-index: 3
+    position: fixed
+    width: 100%
+    padding: 5px 0px 5px 20px
+    background: #adadad
+    h1
+        text-transform: uppercase
+        font-size: 13vw
+
+
+
+.trip-dis
+    position: fixed
+    top: 25vh
     background: rgba(57, 75, 89, .9)
     padding: 15px 10px 20px 15px
     text-align: justify
+    transition: all .5s ease-in-out
+.trip-left
+    transform: translate(-100%, 0px)
 
 
+//   Info Squares
 
 #info-box-container
-  display: flex
-  flex-wrap: wrap
+    position: absolute
+    top: 95vh
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 100px
 
-.map-icon
+
+//  Front side of box that holds icon and trip-title
+.icon
+    visibility: visible
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    padding-top: 15px
+    transition: all .3s ease
+    transform: translate(0)
+
+    h2
+        font-size: 1.8em
+        font-weight: lighter
+        opacity: 1
+        transition: all .2 linear
+        margin-bottom: 5px
+    img
+        margin-bottom: 5px
+        width: 50%
+        height: 19vw
+.icon-slide
+    //transform: translate(200%, 0)
+    width: 0px
+    height: 0vw
+    padding: 0px
+    visibility: hidden
+    h2
+      opacity: 0
+
+
+
+//  Div that holds all of the info box description
+.content
+  height: 0px
+  position: relative
+  left: -260%
+  transition: all .3s ease-out
+  text-align: left
+  //background: $rs-lightblue
+
+.content-expand
+  visibility: visible
+  height: auto
+  left: 0%
+  right: 0%
+  margin: 0px
+  padding: 0px
+  //border: 1px solid yellow
+
 
 .info-title
   display: flex
   height: 15vw
-  background: $rm-purple
+  background: lighten($rm-purple, 9)
   justify-content: space-between
+  background:
+      image: url("/sections/Individual Trip Pages/images/icons/close.svg")
+      repeat: no-repeat
+      position: 96% 50%
+      size: auto 55%
+      margin-right: 5px
+
+
+
+
+
+
   img
     //need to add rotation animation
     height: 50%
     width: auto
     margin-top: auto
     margin-bottom: auto
-    margin-right: 15px
+    margin-right: 19px
 
   h2
     margin-top: auto
@@ -75,58 +155,57 @@ p
     font-size: 1.8em
     font-weight: 500
 .info-dis
-  padding: 10px
+  padding: 10px 10px 0px 10px
 
 
 
-.content
-  position: relative
-  //transform: scaleY(0)
-  left: -260%
-  transition: all .3s ease-out
-  padding: 0px
-  text-align: left
-.expanded
-  left: 0%
-  //transform: scaleY(1)
-
-
+// Info Box Base Class
 .info-box
-  width: 50%
-  height: 30vw
+  width: 49.6%
+  position: relative
+  margin-bottom: 2px
+  //border: 1px solid yellow
   text-align: center
   transition: width .3s ease-out
-  //transition: height 2s
-  //overflow: hidden
+  overflow: hidden
 
 
+.box-expand
+  width: 100%
+  //height: auto
+
+
+
+//Individual Box IDs
 #box1
-  @extend .info-box
   order: 1
   background: $rs-lightblue
-
 #box2
-  @extend .info-box
   order: 2
-  background: $kd-orange
-
+  background: $rm-green
 #box3
-  @extend .info-box
   order: 3
-  background: $rs-lightblue
-
+  background: $rm-purple
 #box4
-  @extend .info-box
-  background: $kd-orange
-  order: 4
-
-
-#box5
-  @extend .info-box
-  order: 5
   background: $rs-lightblue
-
+  order: 4
+#box5
+  order: 5
+  background: $rm-green
 #box6
-  @extend .info-box
   order: 6
-  background: $kd-orange
+  background: $rm-blue
+#box7
+    order: 7
+    background: $rs-lightblue
+
+
+
+
+
+.test-spacer
+    order: 20
+    height: 500px
+    width: 100%
+    margin-top: 50px
+    //border: 1px solid yellow

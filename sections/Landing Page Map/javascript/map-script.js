@@ -1,7 +1,3 @@
-
-
-
-
 //Map IDs
 var mapCostaRica = document.getElementById('Costa_Rica');
 var mapChina = document.getElementById('China');
@@ -29,40 +25,53 @@ $(document).ready(function(){
         });
 });
 
-/*---- Event listeners-----*/
-/*--var mapContainer = document.querySelector("#map-container");
-mapContainer.addEventListener("click", expandCallout, false);
-
-function expandCallout(e) {
-    if (e.target !== e.currentTarget) {
-        var clickedCountry = e.target.id;
-          console.log(e.target.id);
-    }
-    e.stopPropagation();
-}
---*/
-
-
-
-/*----old Event Listeners*/
+/*----old Event Listeners--*/
 //costa rica
 mapCostaRica.addEventListener('click', function() {
-  expand(calloutCostaRica);
+  expand(calloutCostaRica, this);
 });
 //china
 mapChina.addEventListener('click', function() {
-  expand(calloutChina);
+  expand(calloutChina, this);
 });
 
-
 //Expand and Collapse functions
-function expand (callout) {
+function expand (callout, e) {
+    var x = $(e).offset().top
+    var y = $(e).offset().left
+
   callout.style.transform = 'scale(1)';
+  //callout.style.left = (y)+"px";
+  //callout.style.top = (x)+"px";
 };
 //Collapse all open callouts
 function collapse (callout) {
   for (var i = 0; i < callout.length; i++) {
     callout[i].style.transform = 'scale(0)';
-    //map[i].style.transform = 'scale(1)';
+
   };
 };
+
+//Scrolling functions
+$(window).scroll(function() {
+
+  var wScroll = $(this).scrollTop();
+  var test =  $('.logo').offset().top;
+  console.log(test);
+
+
+
+
+
+
+  if(wScroll > $('.main-container').offset().top ){
+      $('.logo').addClass("logo-fixed");
+
+  } else {
+      $('.logo').removeClass("logo-fixed");
+
+  };
+
+
+
+  });
